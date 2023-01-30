@@ -35,6 +35,12 @@ namespace ProyA2
             this.btnactualizar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtnombres = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.cbsexo = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -56,7 +62,7 @@ namespace ProyA2
             // 
             this.btneleminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btneleminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btneleminar.Location = new System.Drawing.Point(6, 70);
+            this.btneleminar.Location = new System.Drawing.Point(6, 137);
             this.btneleminar.Name = "btneleminar";
             this.btneleminar.Size = new System.Drawing.Size(122, 45);
             this.btneleminar.TabIndex = 1;
@@ -96,6 +102,12 @@ namespace ProyA2
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.cbsexo);
+            this.groupBox2.Controls.Add(this.txtApellidos);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.txtnombres);
             this.groupBox2.Controls.Add(this.btningresar);
             this.groupBox2.Controls.Add(this.btneleminar);
             this.groupBox2.Location = new System.Drawing.Point(12, 13);
@@ -105,11 +117,65 @@ namespace ProyA2
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ingreso";
             // 
+            // txtnombres
+            // 
+            this.txtnombres.Location = new System.Drawing.Point(134, 43);
+            this.txtnombres.Name = "txtnombres";
+            this.txtnombres.Size = new System.Drawing.Size(252, 20);
+            this.txtnombres.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(134, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 24);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Nombres";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(404, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 24);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Apellidos";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // txtApellidos
+            // 
+            this.txtApellidos.Location = new System.Drawing.Point(408, 43);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(252, 20);
+            this.txtApellidos.TabIndex = 5;
+            // 
+            // cbsexo
+            // 
+            this.cbsexo.FormattingEnabled = true;
+            this.cbsexo.Location = new System.Drawing.Point(691, 42);
+            this.cbsexo.Name = "cbsexo";
+            this.cbsexo.Size = new System.Drawing.Size(167, 21);
+            this.cbsexo.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(687, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 24);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Sexo";
+            // 
             // Estudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1290, 691);
+            this.ClientSize = new System.Drawing.Size(1082, 691);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Estudiantes";
@@ -117,6 +183,7 @@ namespace ProyA2
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -129,5 +196,11 @@ namespace ProyA2
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnactualizar;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtnombres;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cbsexo;
+        private System.Windows.Forms.TextBox txtApellidos;
     }
 }
